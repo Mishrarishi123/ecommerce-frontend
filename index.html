@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="assets/logo.png" alt="Brand Logo" />
+      </div>
+      <nav id="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="right">
+        <input type="text" placeholder="Search products" />
+        <div id="cart">
+          🛒
+          <span id="count">2</span>
+        </div>
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div id="hero-content">
+        <h1>Biggest Sale of the year</h1>
+        <p>Discover new arrivals with exclusive discounts upto 50% off.</p>
+        <button id="hero-btn" onclick="goToProducts()">Shop Now</button>
+      </div>
+    </section>
+
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
