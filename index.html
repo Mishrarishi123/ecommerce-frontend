@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header Example</title>
+    <title>Elegance</title>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -13,8 +13,8 @@
       </div>
       <nav id="navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -33,11 +33,32 @@
       </div>
     </header>
 
+    <!-- hero section -->
     <section id="hero">
       <div id="hero-content">
         <h1>Biggest Sale of the year</h1>
         <p>Discover new arrivals with exclusive discounts upto 50% off.</p>
         <button id="hero-btn" onclick="goToProducts()">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Produts -->
+    <section id="products">
+      <h1>Our Products</h1>
+
+      <!-- Product Grid -->
+      <div id="productGrid">
+        <!-- Product Card Template (used by JS) -->
+        <div id="product-card" class="product-card">
+          <img
+            src="assets/productplaceholder.jpg"
+            loading="lazy"
+            alt="product placeholder"
+          />
+          <h3>Product Name</h3>
+          <p>Rs.999/-</p>
+          <button type="button">Add to Cart</button>
+        </div>
       </div>
     </section>
 

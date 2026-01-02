@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles/product.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="assets/logo.png" alt="Brand Logo" />
+      </div>
+      <nav id="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="right">
+        <input type="text" placeholder="Search products" />
+        <div id="cart">
+          🛒
+          <span id="count">2</span>
+        </div>
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="product-detail">
+      <div class="container product-wrapper">
+        <!-- Product Image  -->
+        <div class="image-section">
+          <img id="productImage" src="" alt="Product Image" />
+        </div>
+
+        <!-- Product Info -->
+        <div class="info-section">
+          <h1 id="productTitle"></h1>
+          <p class="price" id="productPrice"></p>
+          <p class="description" id="productDescription"></p>
+          <button id="addToCartBtn" class="btn primary">Add to Cart</button>
+         
+        </div>
+
+        <div class="variations">
+          <h4>Size</h4>
+          <div class="options" id="sizeOptions">
+            <button class="option">S</button>
+            <button class="option">M</button>
+            <button class="option">L</button>
+            <button class="option disabled" disabled>XL</button>
+          </div>
+
+          <h4>Color</h4>
+          <div class="options" id="colorOptions">
+            <button class="option">Black</button>
+            <button class="option">Blue</button>
+            <button class="option">Red</button>
+          </div>
+        </div>
+
+        <div class="quantity-control">
+          <button id="decreaseQty">−</button>
+          <span id="quantity">1</span>
+          <button id="increaseQty">+</button>
+
+          <h3>Total Price: ₹<span id="totalPrice">000</span></h3>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 MyStore</p>
+    </footer>
+
+    <script src="scripts/product.js"></script>
+  </body>
+</html>
