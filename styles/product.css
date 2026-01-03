@@ -64,7 +64,14 @@ body {
     border-radius: 12px;
 }
 
-
+#zoomPreview {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ddd;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    display: none;
+}
 
 .image-section img {
     width: 100%;

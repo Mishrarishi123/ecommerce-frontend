@@ -21,6 +21,7 @@ const maxQty = 1000;
 // DOM Elements
 // 
 const productImage = document.getElementById("productImage");
+const zoomPreview = document.getElementById("zoomPreview")
 const productTitle = document.getElementById("productTitle");
 const productPrice = document.getElementById("productPrice");
 const productDescription = document.getElementById("productDescription");
@@ -65,7 +66,10 @@ productImage.addEventListener("mouseleave", () => {
 
 productImage.addEventListener("click", () => {
   productImage.classList.toggle("zoomed");
+  zoomPreview.style.display = "block";
+  zoomPreview.style.backgroundImage = `url(${productImage.src})`;
 });
+
 
 // 
 // Size / Color Selection
@@ -183,6 +187,9 @@ addToCartBtn.addEventListener("click", () => {
 
   alert("Product added to cart successfully");
 });
+
+
+
 
 // 
 // Initial Calls
